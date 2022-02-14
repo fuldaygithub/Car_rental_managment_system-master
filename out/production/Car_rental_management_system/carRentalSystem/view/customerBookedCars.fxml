@@ -1,0 +1,45 @@
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainSceneRight" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/ 8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carRentalSystem.controller.CustomerBookedCarController">
+   <children>
+      <Pane prefHeight="43.0" prefWidth="790.0" style="-fx-background-color: green;">
+         <children>
+            <Text fill="#f5e5e5" layoutX="337.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="45.0" text="Booked Cars">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="38.0" layoutY="69.0" prefHeight="298.0" prefWidth="714.0" style="-fx-background-color: white;">
+         <children>
+            <Text fx:id="car_name" layoutX="33.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="car name" wrappingWidth="234.99999344348907">
+               <font>
+                  <Font size="28.0" />
+               </font></Text>
+            <Text layoutX="41.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost" wrappingWidth="99.50097501277924" />
+            <Text fx:id="total_cost_value" layoutX="157.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="total cost value" />
+            <Label layoutX="41.0" layoutY="141.0" text="Collection-date" />
+            <Label layoutX="41.0" layoutY="173.0" text="Return-date" />
+            <ImageView fx:id="carImage" fitHeight="179.0" fitWidth="235.0" layoutX="320.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="take_car_date" layoutX="157.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="dtae take" wrappingWidth="80.30859231948853" />
+            <Text fx:id="return_car_date" layoutX="157.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="return date" wrappingWidth="80.30859231948853" />
+            <Label layoutX="41.0" layoutY="199.0" text="Total Costs">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="226.0" text="Overdue by:" />
+            <Text fx:id="OverdueL" layoutX="158.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="20.999995231628418" />
+            <Label layoutX="191.0" layoutY="226.0" text="Day(s)" />
+            <Label layoutX="42.0" layoutY="255.0" text="Total cost:" />
+            <Text fx:id="pula_total_cost" layoutX="158.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pula_total_cost" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

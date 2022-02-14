@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainSceneRight" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carRentalSystem.controller.adminManageClientsController">
+   <children>
+      <Pane prefHeight="43.0" prefWidth="790.0" style="-fx-background-color: green;">
+         <children>
+            <Text fill="#f5e5e5" layoutX="337.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="45.0" text="Manage Clients">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <ListView fx:id="clientsListView" layoutX="32.0" layoutY="68.0" onMouseClicked="#handleMouseClick" prefHeight="309.0" prefWidth="155.0" style="-fx-background-color: orange;" />
+      <AnchorPane layoutX="218.0" layoutY="68.0" prefHeight="309.0" prefWidth="544.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="Name" layoutX="31.0" layoutY="14.0" prefHeight="35.0" prefWidth="155.0" text="Name">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="57.0" text="Passport No: " />
+            <Text fx:id="omang" layoutX="119.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="omang" wrappingWidth="66.00000262260437" />
+            <Label layoutX="31.0" layoutY="87.0" text="Email:" />
+            <Text fx:id="email" layoutX="119.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="email_text" wrappingWidth="178.13671875" />
+            <Label layoutX="30.0" layoutY="118.0" text="Borrowed Car">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="car_image" fitHeight="128.0" fitWidth="178.0" layoutX="334.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="car_name" layoutX="30.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car name" wrappingWidth="123.00000190734863" />
+            <Text layoutX="47.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Label fx:id="lfrom" layoutX="27.0" layoutY="186.0" text="FROM: ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="luntil" layoutX="28.0" layoutY="209.0" text="UNTIL:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="lcost" layoutX="27.0" layoutY="233.0" text="COST:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Text fx:id="sdate" layoutX="109.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="sdate" wrappingWidth="66.00000206381083" />
+            <Text fx:id="rdate" layoutX="109.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="rdate" wrappingWidth="66.00000206381083" />
+            <Text fx:id="cost" layoutX="109.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cost" wrappingWidth="111.00000488758087" />
+            <Button layoutX="437.0" layoutY="19.0" mnemonicParsing="false" onAction="#returnCarBtn" style="-fx-background-color: orange;" text="Return/Clear" />
+            <Label fx:id="OverdueLabel" layoutX="27.0" layoutY="259.0" text="Overdue by:" />
+            <Text fx:id="OverdueL" layoutX="108.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Label fx:id="daysLabel" layoutX="138.0" layoutY="259.0" text="Day(s)" />
+            <Label fx:id="t_costLabel" layoutX="32.0" layoutY="287.0" text="Total cost:" />
+            <Text fx:id="pula_total_cost" layoutX="108.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pula_cost" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainScene" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carRentalSystem.controller.adminMainSceneController">
+   <children>
+      <AnchorPane fx:id="mainSceneRight" layoutX="153.0" prefHeight="400.0" prefWidth="800" style="-fx-background-color: green;" />
+      <Pane layoutX="-5.0" prefHeight="400.0" prefWidth="158.0" style="-fx-background-color: green;">
+         <children>
+            <Button fx:id="closeButton" layoutX="1.0" layoutY="290.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="33.0" prefWidth="158.0" style="-fx-background-color: orange;" text="Log out" />
+            <Button layoutX="4.0" layoutY="156.0" mnemonicParsing="false" onAction="#viewCarsBtn" prefHeight="33.0" prefWidth="152.0" style="-fx-background-color: orange;" text="view Cars" />
+            <Button layoutX="4.0" layoutY="246.0" mnemonicParsing="false" onAction="#viewClientsBtn" prefHeight="33.0" prefWidth="152.0" style="-fx-background-color: orange;" text="view clients" />
+            <Button layoutX="4.0" layoutY="200.0" mnemonicParsing="false" onAction="#addCar" prefHeight="33.0" prefWidth="152.0" style="-fx-background-color: orange;" text="Add Car" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

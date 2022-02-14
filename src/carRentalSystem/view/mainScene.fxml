@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainScene" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carRentalSystem.controller.mainSceneController">
+   <children>
+      <AnchorPane fx:id="mainSceneRight" layoutX="153.0" prefHeight="400.0" prefWidth="800" style="-fx-background-color: green;" />
+      <Pane layoutX="-5.0" prefHeight="400.0" prefWidth="158.0" style="-fx-background-color: green;">
+         <children>
+            <Button fx:id="mainSceneBookCarBtn" layoutY="200.0" mnemonicParsing="false" onAction="#bookedCar" prefHeight="33.0" prefWidth="158.0" style="-fx-background-color: orange;" text="Booked Car" />
+            <Button layoutX="4.0" layoutY="156.0" mnemonicParsing="false" onAction="#availableCars" prefHeight="33.0" prefWidth="152.0" style="-fx-background-color: orange;" text="Availble cars">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor></Button>
+            <Button fx:id="closeButton" layoutX="4.0" layoutY="243.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="33.0" prefWidth="152.0" style="-fx-background-color: orange;" text="Log out" />
+            <Label fx:id="currentUserText" layoutX="22.0" layoutY="352.0" prefHeight="17.0" prefWidth="123.0" text="Current user" textFill="#bcb1b1">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

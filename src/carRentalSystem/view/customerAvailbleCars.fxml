@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainSceneRight" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carRentalSystem.controller.CustomerAvailbleCars">
+   <children>
+      <Pane prefHeight="43.0" prefWidth="790.0" style="-fx-background-color: green;">
+         <children>
+            <Text fill="#f5e5e5" layoutX="337.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="45.0" text="Availble Cars">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <ListView fx:id="carListView" layoutX="39.0" layoutY="59.0" onMouseClicked="#handleMouseClick" prefHeight="322.0" prefWidth="200.0" style="-fx-background-color: orange;" />
+      <AnchorPane layoutX="258.0" layoutY="59.0" prefHeight="322.0" prefWidth="490.0" style="-fx-background-color: white;">
+         <children>
+            <Text fx:id="carName" fill="#111010" layoutX="33.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="car name" wrappingWidth="162.615234375">
+               <font>
+                  <Font size="24.0" />
+               </font></Text>
+            <Text layoutX="19.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price:" />
+            <Text fx:id="Price_value" layoutX="68.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price_value" />
+            <Text layoutX="15.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status:" />
+            <Text fx:id="Stauts_value" layoutX="64.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stauts_value" />
+            <Button fx:id="bookCar_bnt" layoutX="14.0" layoutY="265.0" mnemonicParsing="false" onAction="#book_btn" prefHeight="43.0" prefWidth="310.0" style="-fx-background-color: orange;" text="Book" />
+            <ImageView fx:id="carImage" fitHeight="150.0" fitWidth="200.0" layoutX="205.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+            <Pane layoutX="14.0" layoutY="198.0" prefHeight="55.0" prefWidth="146.0" style="-fx-background-color: orange;">
+               <children>
+                  <DatePicker fx:id="book_from_date" layoutY="29.0" prefHeight="25.0" prefWidth="134.0" />
+                  <Label layoutX="8.0" layoutY="6.0" text="From" />
+               </children>
+            </Pane>
+            <Pane layoutX="179.0" layoutY="198.0" prefHeight="55.0" prefWidth="146.0" style="-fx-background-color: orange;">
+               <children>
+                  <DatePicker fx:id="book_until_date" layoutY="29.0" prefHeight="25.0" prefWidth="134.0" />
+                  <Label layoutX="8.0" layoutY="6.0" text="Until" />
+               </children>
+            </Pane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

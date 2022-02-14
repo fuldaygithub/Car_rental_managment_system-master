@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainSceneRight" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carRentalSystem.controller.adminAddCarController">
+   <children>
+      <Pane prefHeight="43.0" prefWidth="790.0" style="-fx-background-color: green;">
+         <children>
+            <Text fill="#f5e5e5" layoutX="337.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="45.0" text="Add Car ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <TextField fx:id="car_name" layoutX="81.0" layoutY="77.0" prefHeight="35.0" prefWidth="227.0" promptText="Car Name" />
+      <TextField fx:id="car_model" layoutX="81.0" layoutY="128.0" prefHeight="35.0" prefWidth="227.0" promptText="Model" />
+      <TextField fx:id="car_price" layoutX="81.0" layoutY="175.0" prefHeight="35.0" prefWidth="227.0" promptText="Price" />
+      <Button layoutX="81.0" layoutY="272.0" mnemonicParsing="false" onAction="#addCarBtn" prefHeight="43.0" prefWidth="227.0" style="-fx-background-color: orange;" text="Add Car" />
+      <Button fx:id="ImgFileBtn" layoutX="81.0" layoutY="221.0" mnemonicParsing="false" onAction="#uploadImg" prefHeight="35.0" prefWidth="227.0" text="Image" />
+   </children>
+</AnchorPane>
